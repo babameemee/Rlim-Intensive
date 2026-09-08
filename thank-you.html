@@ -1,18 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
 <title>Your intensive is booked — Richard Lim, PCC</title>
 <meta name="robots" content="noindex">
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:#EDEEEA;color:#182A31;font-family:"Newsreader",Georgia,serif;font-size:19px;line-height:1.68;overflow-x:hidden}
@@ -21,11 +14,14 @@ img{max-width:100%}
 a{color:#8A6630}
 a:hover{color:#B98D4C}
 </style>
-</helmet>
-
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap"></noscript>
+</head>
+<body>
 <header style="background:#FAFAF7;border-bottom:1px solid #D2D6CE;padding:16px 0">
   <div style="max-width:1080px;margin:0 auto;padding:0 clamp(20px,3vw,28px);display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap">
-    <img src="assets/logo.png" alt="RLim Leadership" style="height:clamp(26px,4vw,34px);width:auto;display:block">
+    <img src="assets/logo.webp" alt="RLim Leadership" width="520" height="80" style="height:clamp(26px,4vw,34px);width:auto;display:block">
     <span style="font-family:'IBM Plex Sans',sans-serif;font-size:.84rem;color:#5A6862">Executive coach · ICF PCC · Leaders across Asia &amp; North America</span>
   </div>
 </header>
@@ -81,7 +77,7 @@ a:hover{color:#B98D4C}
   <div style="max-width:min(1080px,80ch);margin:0 auto;padding:0 clamp(20px,3vw,28px)">
     <h2 style="font-weight:400;margin:0;letter-spacing:-0.011em;font-size:clamp(1.6rem,3.2vw,2.3rem);line-height:1.14;color:#F3F6F3">One last thing</h2>
     <p style="margin:24px 0 0;font-size:1.14rem;line-height:1.62">You have already done the hardest part, which was deciding not to carry this alone for another month. I am looking forward to our conversation.</p>
-    <img src="assets/signature-light.png" alt="Richard Lim signature" style="display:block;height:74px;width:auto;margin:40px 0 10px;opacity:.92">
+    <img src="assets/signature-light.webp" alt="Richard Lim signature" width="340" height="193" loading="lazy" style="display:block;height:74px;width:auto;margin:40px 0 10px;opacity:.92">
     <p style="font-family:'IBM Plex Sans',sans-serif;font-size:.9rem;color:#93A39C;line-height:1.8;margin-top:0">Richard Lim<br>Executive Coach | Team Coach<br>Coach Trainer | Mentor Coach</p>
     <p style="font-family:'IBM Plex Sans',sans-serif;font-size:.85rem;color:#93A39C;margin-top:28px">Questions before we meet? <a href="mailto:info@rlimleadership.com" style="color:#D2A868">info@rlimleadership.com</a></p>
   </div>
@@ -89,13 +85,12 @@ a:hover{color:#B98D4C}
 
 <footer style="background:#16272F;color:#8FA09A;font-family:'IBM Plex Sans',sans-serif;font-size:.8rem;line-height:1.7;padding:38px 0">
   <div style="max-width:1080px;margin:0 auto;padding:0 clamp(20px,3vw,28px);border-bottom:1px solid #2A3B42;padding-bottom:22px;margin-bottom:22px">
-    <img src="assets/logo.png" alt="RLim Leadership" style="height:26px;width:auto;display:block;filter:invert(1)">
+    <img src="assets/logo.webp" alt="RLim Leadership" width="520" height="80" loading="lazy" style="height:26px;width:auto;display:block;filter:invert(1)">
   </div>
   <div style="max-width:1080px;margin:0 auto;padding:0 clamp(20px,3vw,28px);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
     <span>&copy; 2026 RLim Leadership. All rights reserved.</span>
     <span>Coaching is not legal, financial, HR, medical or therapeutic advice.</span>
   </div>
 </footer>
-</x-dc>
 </body>
 </html>

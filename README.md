@@ -1,27 +1,44 @@
 # Decision Clarity Intensive — deploy package
 
-Upload the **contents of this folder** to your GitHub repo root, then connect the repo
-to Cloudflare Pages (Framework preset: **None**, Build command: *blank*, Output directory: `/`).
+This is a **static build**: plain HTML, no JavaScript framework, no build step.
+Upload the contents of this folder to the repo root that Cloudflare Pages serves.
 
-## Files
+    index.html          landing page
+    thank-you.html      post-booking page (Calendly redirect target)
+    _headers            cache rules for Cloudflare Pages
+    assets/logo.webp
+    assets/richard.webp
+    assets/signature-light.webp
 
-    index.html          → the landing page
-    thank-you.html      → post-booking page (set as Calendly redirect URL)
-    support.js          → required runtime; must sit next to the HTML files
+## Important: replacing the previous upload
+
+The old build loaded a file called `support.js` and `.png` images. **Delete these
+from the repo** — they are no longer referenced:
+
+    support.js
     assets/logo.png
     assets/richard.png
     assets/signature-light.png
 
-## You still need to add
+## The video
 
-    assets/richard-intro.mp4          ← your ~1:45 intro video (required for the video block)
-    assets/richard-intro-poster.jpg   ← optional still frame shown before play
+The page loads it from your R2 bucket:
+`https://pub-2d2dc6036f1346409841abab96401232.r2.dev/richard-intensive.mp4`
+To change it, search `index.html` for `richard-intensive.mp4`.
 
-Drop them into `assets/` with exactly those names. No code changes needed.
+When the site moves to Richard's Cloudflare account, re-upload the video to his
+R2 bucket and replace that URL with his public bucket URL.
 
-## After deploying
+## Calendly
 
-1. Point your domain/subdomain at the Pages project.
-2. In Calendly → Decision Clarity Intensive → Confirmation page, set the redirect to
-   `https://yourdomain.com/thank-you.html`
-3. `thank-you.html` carries `<meta name="robots" content="noindex">` — leave it there.
+Booking links point to `calendly.com/rlimleadership/decision-clarity-intensive`.
+In Calendly → that event → Confirmation page, set the redirect to
+`https://yourdomain.com/thank-you.html`.
+
+## What changed for speed
+
+- Removed the React runtime (`support.js`) — it was render-blocking for ~3 seconds
+- Images converted to WebP: Richard's photo went from 444 KB to 40 KB
+- Google Fonts now load asynchronously instead of blocking the first paint
+- Intrinsic width/height on every image, so nothing reflows as they arrive
+- `_headers` gives images a one-year immutable cache

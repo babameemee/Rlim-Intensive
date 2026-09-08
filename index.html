@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet>
 <title>The Decision Clarity Intensive — Richard Lim, PCC</title>
 <meta name="description" content="A private 90-minute coaching intensive for Christian executives carrying one leadership decision that is too important to rush. US$495, credited toward ongoing coaching.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/richard.webp">
 <style>
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:#EDEEEA;color:#182A31;font-family:"Newsreader",Georgia,serif;font-size:19px;line-height:1.68;overflow-x:hidden}
@@ -26,22 +20,27 @@ details[open] .plus{transform:rotate(45deg)}
 input::placeholder{color:#6C807A}
 @media (max-width:1000px){.sb-copy{display:none}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-@media (max-width:800px){.hero-img-col{order:-1}}
-</style>
-</helmet>
 
-<div style="padding-bottom:{{ barPad }}">
+.gold:hover{background:#D2A868}
+.dark:hover{background:#2C4149;border-color:#2C4149}
+</style>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,300;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap"></noscript>
+</head>
+<body>
+<div style="padding-bottom:104px">
 
 <header style="background:#FAFAF7;border-bottom:1px solid #D2D6CE;padding:16px 0">
   <div style="max-width:1080px;margin:0 auto;padding:0 clamp(20px,3vw,28px);display:flex;justify-content:space-between;gap:16px;align-items:center;flex-wrap:wrap">
-    <img src="assets/logo.png" alt="RLim Leadership" style="height:clamp(26px,4vw,34px);width:auto;display:block">
+    <img src="assets/logo.webp" alt="RLim Leadership" width="520" height="80" style="height:clamp(26px,4vw,34px);width:auto;display:block">
     <span style="font-family:'IBM Plex Sans',sans-serif;font-size:.84rem;color:#5A6862">Executive coach · ICF PCC · Leaders across Asia &amp; North America</span>
   </div>
 </header>
 
 <div style="background:#0E1B23;color:#E7EDEA">
   <div style="max-width:1080px;margin:0 auto;padding:clamp(52px,6vw,76px) clamp(20px,3vw,28px) clamp(60px,7vw,84px)">
-    <div style="display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,56px);align-items:flex-start">
+    <div class="hero-row" style="display:flex;flex-wrap:wrap;gap:clamp(36px,5vw,56px);align-items:flex-start">
       <div style="flex:1 1 420px;min-width:0">
         <ul style="margin:0 0 34px;padding:0;list-style:none">
           <li style="font-style:italic;font-size:1.12rem;line-height:1.5;color:#9FB2AC;margin-bottom:8px">&ldquo;I think I have to let him go. I&rsquo;ve thought that for four months.&rdquo;</li>
@@ -51,7 +50,7 @@ input::placeholder{color:#6C807A}
         <div style="width:64px;height:1px;background:#B98D4C;margin:0 0 26px"></div>
         <h1 style="font-weight:400;margin:0;letter-spacing:-0.011em;font-size:clamp(2.35rem,5.6vw,4.05rem);line-height:1.03;color:#F6F8F5">Some decisions are too important to rush.</h1>
         <p style="font-size:1.2rem;line-height:1.55;color:#C3D0CB;margin:24px 0 34px;max-width:38ch">A private 90-minute coaching intensive for Christian executives carrying one leadership decision they cannot afford to get wrong &mdash; and cannot keep carrying alone.</p>
-        <a href="{{ bookingUrl }}" onClick="{{ onBook }}" style="display:inline-flex;align-items:center;justify-content:center;font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:1.1rem;background:#B98D4C;color:#14212A;border-radius:2px;padding:22px 40px;width:100%;max-width:430px;text-decoration:none;box-shadow:0 1px 0 #8A6630" style-hover="background:#D2A868">Book your intensive &mdash; US$495</a>
+        <a href="https://calendly.com/rlimleadership/decision-clarity-intensive" data-book="1" style="display:inline-flex;align-items:center;justify-content:center;font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:1.1rem;background:#B98D4C;color:#14212A;border-radius:2px;padding:22px 40px;width:100%;max-width:430px;text-decoration:none;box-shadow:0 1px 0 #8A6630" class="gold">Book your intensive &mdash; US$495</a>
         <p style="font-family:'IBM Plex Sans',sans-serif;font-size:.85rem;line-height:1.6;color:#93A39C;margin:14px 0 0;max-width:430px">90 minutes on Zoom · You choose the time · Reschedule up to 48 hours before · Fully credited toward ongoing coaching if you continue within 14 days.</p>
         <a href="#video" style="display:inline-block;margin-top:16px;font-family:'IBM Plex Sans',sans-serif;font-size:.88rem;color:#D2A868;text-decoration:none;border-bottom:1px solid rgba(210,168,104,.45);padding-bottom:2px">Watch two minutes with Richard first</a>
         <div style="margin-top:30px;font-family:'IBM Plex Sans',sans-serif;font-size:.84rem;color:#93A39C;line-height:1.9">
@@ -61,8 +60,8 @@ input::placeholder{color:#6C807A}
         </div>
       </div>
 
-      <div class="hero-img-col" style="flex:1 1 300px;min-width:0;background:#EDEEEA;border:1px solid rgba(255,255,255,.09)">
-        <img src="assets/richard.png" alt="Richard Lim" style="display:block;width:100%;height:auto">
+      <div class="hero-photo" style="flex:1 1 300px;min-width:0;background:#EDEEEA;border:1px solid rgba(255,255,255,.09)">
+        <img src="assets/richard.webp" alt="Richard Lim" width="820" height="644" style="display:block;width:100%;height:auto">
         <div style="background:#16272F;border-top:1px solid #B98D4C;padding:14px 18px;font-family:'IBM Plex Sans',sans-serif">
           <b style="display:block;font-size:.95rem;color:#F0F4F1;font-weight:600">Richard Lim, PCC</b>
           <span style="font-size:.8rem;color:#93A39C">Executive coach · Team coach · Mentor coach</span>
@@ -178,7 +177,7 @@ input::placeholder{color:#6C807A}
       </div>
     </div>
     <div style="margin-top:52px">
-      <a href="{{ bookingUrl }}" onClick="{{ onBook }}" style="display:inline-flex;align-items:center;justify-content:center;font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:1.02rem;background:#B98D4C;color:#14212A;border-radius:2px;padding:19px 34px;text-decoration:none;box-shadow:0 1px 0 #8A6630" style-hover="background:#D2A868">Book your intensive &mdash; US$495</a>
+      <a href="https://calendly.com/rlimleadership/decision-clarity-intensive" data-book="1" style="display:inline-flex;align-items:center;justify-content:center;font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:1.02rem;background:#B98D4C;color:#14212A;border-radius:2px;padding:19px 34px;text-decoration:none;box-shadow:0 1px 0 #8A6630" class="gold">Book your intensive &mdash; US$495</a>
     </div>
   </div>
 </section>
@@ -225,16 +224,14 @@ input::placeholder{color:#6C807A}
 <section id="video" style="padding:clamp(60px,7vw,88px) 0;background:#FAFAF7;border-top:1px solid #D2D6CE">
   <div style="max-width:1080px;margin:0 auto;padding:0 clamp(20px,3vw,28px);display:flex;flex-wrap:wrap;gap:clamp(32px,4vw,52px);align-items:flex-start">
     <div style="flex:1 1 320px;min-width:0">
-      <div id="vid-wrap" style="position:relative;width:100%;aspect-ratio:16/9;background:#0E1B23;border:1px solid #D2D6CE;overflow:hidden;cursor:pointer">
-        <img class="vp" src="richard-intensive-poster.jpg" alt="Richard Lim" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
-        <div class="vp" style="position:absolute;left:0;right:0;bottom:0;height:42px;background:linear-gradient(transparent,rgba(0,0,0,0.72));display:flex;align-items:center;padding:0 14px;gap:10px">
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="rgba(255,255,255,0.18)"/><polygon points="8,6.5 15,10 8,13.5" fill="#fff"/></svg>
-          <span style="font-family:'IBM Plex Sans',sans-serif;font-size:.78rem;color:rgba(255,255,255,0.8)">0:00</span>
+      <div style="position:relative;width:100%;border:1px solid #D2D6CE;background:#0E1B23">
+        <video id="introvideo" controls preload="metadata" playsinline src="https://pub-2d2dc6036f1346409841abab96401232.r2.dev/richard-intensive.mp4" style="display:block;width:100%;aspect-ratio:16/9;background:#0E1B23"></video>
+        <button id="playbtn" aria-label="Play the video" style="position:absolute;inset:0;width:100%;height:100%;border:0;background:rgba(14,27,35,.34);cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0">
+          <span style="display:flex;align-items:center;justify-content:center;width:78px;height:78px;border-radius:50%;background:#B98D4C;box-shadow:0 6px 26px rgba(0,0,0,.4)">
+            <span style="display:block;width:0;height:0;margin-left:6px;border-style:solid;border-width:15px 0 15px 24px;border-color:transparent transparent transparent #14212A"></span>
+          </span>
+        </button>
         </div>
-        <video preload="metadata" playsinline style="display:none;width:100%;height:100%;object-fit:cover">
-          <source src="https://pub-2d2dc6036f1346409841abab96401232.r2.dev/richard-intensive.mp4" type="video/mp4">
-        </video>
-      </div>
       <p style="font-family:'IBM Plex Sans',sans-serif;font-size:.8rem;color:#5A6862;margin:12px 0 0">Under two minutes with Richard: what happens in an intensive, and what doesn&rsquo;t.</p>
     </div>
     <div style="flex:1 1 340px;min-width:0;max-width:63ch">
@@ -276,7 +273,7 @@ input::placeholder{color:#6C807A}
       </div>
       <p style="margin:0;font-size:1rem;color:#5A6862">There is no pressure to continue. The intensive stands on its own as a focused opportunity to work through one important issue properly.</p>
       <div style="margin-top:30px">
-        <a href="{{ bookingUrl }}" onClick="{{ onBook }}" style="display:inline-flex;align-items:center;justify-content:center;font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:1.1rem;background:#B98D4C;color:#14212A;border-radius:2px;padding:22px 40px;width:100%;max-width:430px;text-decoration:none;box-shadow:0 1px 0 #8A6630" style-hover="background:#D2A868">Choose your time &mdash; US$495</a>
+        <a href="https://calendly.com/rlimleadership/decision-clarity-intensive" data-book="1" style="display:inline-flex;align-items:center;justify-content:center;font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:1.1rem;background:#B98D4C;color:#14212A;border-radius:2px;padding:22px 40px;width:100%;max-width:430px;text-decoration:none;box-shadow:0 1px 0 #8A6630" class="gold">Choose your time &mdash; US$495</a>
         <p style="font-family:'IBM Plex Sans',sans-serif;font-size:.85rem;line-height:1.6;color:#5A6862;margin:14px 0 0;max-width:430px">You pick your slot and pay on the same page. I hold a limited number of intensive slots each month so that every session gets real preparation.</p>
       </div>
     </div>
@@ -353,34 +350,34 @@ input::placeholder{color:#6C807A}
     <p style="margin:0 0 1.15em;font-size:1.22rem;line-height:1.62">You do not need to rush it. You do not need to carry it in silence. And you do not need to make sense of it in isolation.</p>
     <p style="margin:0;font-size:1.22rem;line-height:1.62">Bring one real leadership issue. Let&rsquo;s slow down, examine what is happening, and find what needs your attention next.</p>
     <div style="margin-top:38px">
-      <a href="{{ bookingUrl }}" onClick="{{ onBook }}" style="display:inline-flex;align-items:center;justify-content:center;font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:1.1rem;background:#B98D4C;color:#14212A;border-radius:2px;padding:22px 40px;width:100%;max-width:430px;text-decoration:none;box-shadow:0 1px 0 #8A6630" style-hover="background:#D2A868">Book your intensive &mdash; US$495</a>
+      <a href="https://calendly.com/rlimleadership/decision-clarity-intensive" data-book="1" style="display:inline-flex;align-items:center;justify-content:center;font-family:'IBM Plex Sans',sans-serif;font-weight:600;font-size:1.1rem;background:#B98D4C;color:#14212A;border-radius:2px;padding:22px 40px;width:100%;max-width:430px;text-decoration:none;box-shadow:0 1px 0 #8A6630" class="gold">Book your intensive &mdash; US$495</a>
       <p style="font-family:'IBM Plex Sans',sans-serif;font-size:.85rem;line-height:1.6;color:#93A39C;margin:14px 0 0;max-width:430px">Not ready for the intensive? <a href="https://clarity.rlimcoach.com" style="color:#D2A868">Book a free 30-minute Clarity Conversation instead.</a></p>
     </div>
-    <img src="assets/signature-light.png" alt="Richard Lim signature" style="display:block;height:74px;width:auto;margin:44px 0 10px;opacity:.92">
+    <img src="assets/signature-light.webp" alt="Richard Lim signature" width="340" height="193" loading="lazy" style="display:block;height:74px;width:auto;margin:44px 0 10px;opacity:.92">
     <p style="font-family:'IBM Plex Sans',sans-serif;font-size:.9rem;color:#93A39C;line-height:1.8;margin-top:0">Richard Lim<br>Executive Coach | Team Coach<br>Coach Trainer | Mentor Coach</p>
   </div>
 </section>
 
-<section style="padding:clamp(52px,6vw,72px) 0;background:#FAFAF7;border-top:1px solid #D2D6CE">
-  <div style="max-width:min(1080px,80ch);margin:0 auto;padding:0 clamp(20px,3vw,28px)">
-    <h2 style="font-weight:400;margin:0 0 10px;letter-spacing:-0.011em;font-size:clamp(1.4rem,2.8vw,2rem);line-height:1.2">Not ready to book?</h2>
-    <p style="margin:0 0 24px;color:#5A6862;max-width:52ch">Get the one-page Decision Clarity Framework — the four questions Richard uses in every intensive. Free.</p>
-    <sc-if value="{{ optinSent }}" hint-placeholder-val="{{ false }}">
-      <p style="color:#B98D4C;font-size:1rem;margin:0">Sent. Check your inbox in a minute.</p>
-    </sc-if>
-    <sc-if value="{{ optinOpen }}" hint-placeholder-val="{{ true }}">
-    <form onSubmit="{{ onOptinSubmit }}" style="display:flex;gap:10px;flex-wrap:wrap;max-width:480px">
-      <label for="footerEmail" style="position:absolute;left:-9999px">Email address</label>
-      <input type="email" id="footerEmail" name="email" placeholder="Your email address" required autocomplete="email" style="flex:1;min-width:200px;background:#fff;border:1px solid #C4C9C2;color:#182A31;font-family:'IBM Plex Sans',sans-serif;font-size:16px;padding:13px 16px;border-radius:2px">
-      <button type="submit" style="background:#B98D4C;color:#14212A;border:none;font-family:'IBM Plex Sans',sans-serif;font-size:.95rem;font-weight:600;padding:13px 24px;border-radius:2px;cursor:pointer;white-space:nowrap">Send it to me</button>
-    </form>
-    </sc-if>
+<section style="padding:clamp(52px,6vw,76px) 0;background:#FAFAF7;border-top:1px solid #D2D6CE">
+  <div style="max-width:1080px;margin:0 auto;padding:0 clamp(20px,3vw,28px);display:flex;flex-wrap:wrap;gap:clamp(28px,4vw,56px);align-items:flex-start">
+    <div style="flex:1 1 340px;min-width:0;max-width:52ch">
+      <span style="font-family:'IBM Plex Sans',sans-serif;font-size:.78rem;letter-spacing:.06em;color:#5A6862;font-weight:500">NOT READY TO BOOK?</span>
+      <h2 style="font-weight:400;margin:14px 0 0;letter-spacing:-0.011em;font-size:clamp(1.6rem,3vw,2.3rem);line-height:1.14">Take the framework with you.</h2>
+      <p style="margin:20px 0 0;color:#5A6862">A one-page Decision Clarity Framework &mdash; the four areas we work through in every intensive, written so you can sit down with your own decision this week. No sequence of sales emails; you can reply to it directly.</p>
+    </div>
+    <div style="flex:1 1 320px;min-width:0;max-width:440px">
+      <form id="optinform" style="display:flex;flex-wrap:wrap;gap:10px">
+        <label for="sbEmail" style="position:absolute;left:-9999px">Email address</label>
+        <input type="email" id="sbEmail" name="email" placeholder="Your email address" required autocomplete="email" style="flex:1 1 200px;min-width:0;background:#FFFFFF;border:1px solid #C3C9C0;color:#182A31;font-family:'IBM Plex Sans',sans-serif;font-size:16px;padding:15px 16px;border-radius:2px">
+        <button type="submit" style="background:#182A31;color:#F6F8F5;border:1px solid #182A31;font-family:'IBM Plex Sans',sans-serif;font-size:.95rem;font-weight:600;padding:15px 24px;border-radius:2px;cursor:pointer;white-space:nowrap" class="dark">Send it to me</button>
+        <p style="font-family:'IBM Plex Sans',sans-serif;font-size:.78rem;color:#6C807A;margin:2px 0 0;flex:1 1 100%">One email with the framework. Unsubscribe any time.</p>
+      </form>
+      </div>
   </div>
 </section>
-
 <footer style="background:#16272F;color:#8FA09A;font-family:'IBM Plex Sans',sans-serif;font-size:.8rem;line-height:1.7;padding:38px 0">
   <div style="max-width:1080px;margin:0 auto;padding:0 clamp(20px,3vw,28px);border-bottom:1px solid #2A3B42;padding-bottom:22px;margin-bottom:22px">
-    <img src="assets/logo.png" alt="RLim Leadership" style="height:26px;width:auto;display:block;filter:invert(1)">
+    <img src="assets/logo.webp" alt="RLim Leadership" width="520" height="80" loading="lazy" style="height:26px;width:auto;display:block;filter:invert(1)">
   </div>
   <div style="max-width:1080px;margin:0 auto;padding:0 clamp(20px,3vw,28px);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap">
     <span>&copy; 2026 RLim Leadership. All rights reserved.</span>
@@ -390,78 +387,40 @@ input::placeholder{color:#6C807A}
 
 </div>
 
-<sc-if value="{{ showStickyBar }}" hint-placeholder-val="{{ true }}">
-<div ref="{{ barRef }}" role="region" aria-label="Book or get the free framework" style="position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(14,27,35,.97);backdrop-filter:blur(8px);border-top:1px solid #8A6630;color:#E7EDEA;font-family:'IBM Plex Sans',sans-serif">
-  <div style="max-width:1180px;margin:0 auto;padding:12px clamp(16px,3vw,28px);display:flex;align-items:center;gap:clamp(10px,2vw,26px);flex-wrap:wrap">
-    <a href="{{ bookingUrl }}" onClick="{{ onBook }}" style="background:#B98D4C;color:#14212A;text-decoration:none;font-weight:600;font-size:.98rem;padding:14px 26px;border-radius:2px;box-shadow:0 1px 0 #8A6630;flex:0 0 auto;text-align:center;max-width:100%" style-hover="background:#D2A868">
+<div id="stickybar" role="region" aria-label="Book or get the free framework" style="position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(14,27,35,.97);backdrop-filter:blur(8px);border-top:1px solid #8A6630;color:#E7EDEA;font-family:'IBM Plex Sans',sans-serif">
+  <div style="max-width:1180px;margin:0 auto;padding:12px clamp(16px,3vw,28px);display:flex;align-items:center;justify-content:center;gap:clamp(10px,2vw,26px);flex-wrap:wrap">
+    <a href="https://calendly.com/rlimleadership/decision-clarity-intensive" data-book="1" style="background:#B98D4C;color:#14212A;text-decoration:none;font-weight:600;font-size:.98rem;padding:14px 26px;border-radius:2px;box-shadow:0 1px 0 #8A6630;flex:1 1 240px;max-width:520px;text-align:center" class="gold">
       Book the intensive &mdash; US$495
       <small style="display:block;font-weight:400;font-size:.72rem;opacity:.75;margin-top:1px">90 minutes · Zoom · Your fee refunded if it isn&rsquo;t worth it</small>
     </a>
   </div>
 </div>
-</sc-if>
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;bookingUrl&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;https://calendly.com/rlimleadership/decision-clarity-intensive&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Behavior&quot;},&quot;showStickyBar&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Behavior&quot;},&quot;showOptIn&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Behavior&quot;}}">
-class Component extends DCLogic {
-  state = { optinSent: false, barH: 104 };
-  barRef = React.createRef();
-  componentDidMount() {
-    const measure = () => {
-      const el = this.barRef.current;
-      const h = el ? el.getBoundingClientRect().height : 0;
-      if (h && Math.abs(h - this.state.barH) > 1) this.setState({ barH: h });
-    };
-    measure();
-    if (window.ResizeObserver && this.barRef.current) {
-      this._ro = new ResizeObserver(measure);
-      this._ro.observe(this.barRef.current);
-    }
-    window.addEventListener("resize", measure);
-    this._measure = measure;
-  }
-  componentDidUpdate() { if (this._measure) this._measure(); }
-  componentWillUnmount() {
-    if (this._ro) this._ro.disconnect();
-    if (this._measure) window.removeEventListener("resize", this._measure);
-  }
-  renderVals() {
-    const sticky = this.props.showStickyBar ?? true;
-    return {
-      barRef: this.barRef,
-      barPad: (sticky ? Math.ceil(this.state.barH) + 12 : 0) + "px",
-      bookingUrl: this.props.bookingUrl ?? "https://calendly.com/rlimleadership/decision-clarity-intensive",
-      showStickyBar: sticky,
-      showOptIn: this.props.showOptIn ?? true,
-      optinSent: this.state.optinSent,
-      optinOpen: !this.state.optinSent,
-      onBook: () => {
-        if (window.dataLayer) window.dataLayer.push({ event: "BookClick" });
-      },
-      onOptinSubmit: (e) => {
-        e.preventDefault();
-        const input = e.target.querySelector("input[type=email]");
-        const email = (input && input.value || "").trim();
-        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { input && input.focus(); return; }
-        if (window.dataLayer) window.dataLayer.push({ event: "LeadSubmit", email: email });
-        this.setState({ optinSent: true });
-      }
-    };
-  }
-}
-</script>
 <script>
-document.addEventListener('click',function(e){
-  var w=e.target.closest&&e.target.closest('#vid-wrap');
-  if(!w||w.dataset.vpDone)return;
-  w.dataset.vpDone='1';
-  var v=w.querySelector('video');
-  [].forEach.call(w.querySelectorAll('.vp'),function(el){el.style.display='none';});
-  v.style.display='block';
-  v.controls=true;
-  w.style.cursor='default';
-  var p=v.play();
-  if(p&&p.catch)p.catch(function(){});
-});
+(function(){
+  var bar=document.getElementById('stickybar'),pad=document.querySelector('body>div');
+  function fit(){ if(bar&&pad) pad.style.paddingBottom=(Math.ceil(bar.getBoundingClientRect().height)+12)+'px'; }
+  fit(); addEventListener('resize',fit); addEventListener('load',fit);
+  var btn=document.getElementById('playbtn'),vid=document.getElementById('introvideo');
+  if(btn&&vid){
+    btn.addEventListener('click',function(){ btn.remove(); var p=vid.play(); if(p&&p.catch)p.catch(function(){}); });
+    vid.addEventListener('play',function(){ if(btn.parentNode)btn.remove(); });
+  }
+  var f=document.getElementById('optinform');
+  if(f) f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var i=f.querySelector('input[type=email]'), v=(i&&i.value||'').trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){ i&&i.focus(); return; }
+    if(window.dataLayer)window.dataLayer.push({event:'LeadSubmit',email:v});
+    var m=document.createElement('p');
+    m.setAttribute('style',"font-family:'IBM Plex Sans',sans-serif;margin:0;padding:18px 20px;background:#F1EEE6;border:1px solid #D8C79F;color:#5A4A28;font-size:.95rem;line-height:1.5");
+    m.textContent='Sent. Check your inbox in a minute \u2014 if it is not there, look in Promotions.';
+    f.replaceWith(m);
+  });
+  document.addEventListener('click',function(e){
+    var a=e.target.closest&&e.target.closest('[data-book]');
+    if(a&&window.dataLayer)window.dataLayer.push({event:'BookClick'});
+  });
+})();
 </script>
 </body>
 </html>
